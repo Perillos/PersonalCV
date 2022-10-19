@@ -1,0 +1,29 @@
+
+#sobre-mi {
+    display: flex;
+}
+
+.sobre-mi {
+    margin: 0;
+    padding: 5rem;
+
+    @media (min-width: $tablet) {
+        margin-left: 50%;
+        margin-right: 10%; 
+    }
+
+
+    &__titulo {
+        text-align: center;
+
+        &--tachado {
+            text-decoration: line-through;
+        }
+    }    
+    
+    &__parrafo {
+        text-align: justify;
+        text-indent: 2rem;
+    }
+}
+

@@ -1,0 +1,27 @@
+
+
+
+
+.habilidades {
+
+    &__titulo {
+        text-align: center;
+    }
+    &__logos {
+        display: grid;
+        gap: 4rem;
+        padding: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        
+    
+    }
+    &__logo {
+        border-radius: 1rem;
+        box-shadow: 0 0 3rem 0 $negro-trasparente;
+        text-align: center;
+        padding: 5rem;
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+} 
+

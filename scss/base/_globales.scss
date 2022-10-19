@@ -1,0 +1,67 @@
+
+/* Estandar */
+
+html {
+    box-sizing: border-box; /* Tamaño imagenes */
+    font-size: 62.5%; /* 1rem = 10px */
+    // scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    // margin: 0;
+    // padding: 0;
+    box-sizing: inherit; /* Tamaño imagenes */
+}
+
+
+/* Especifico */
+
+body {
+    background-color: $naranja;
+    font: $titulos;
+}
+// header {
+//     // height: ;
+//     // display: flex;
+//     // flex-direction: column;
+//     // justify-content: space-around;
+//     // gap: 2rem;
+// }
+footer {
+    background-color: $marron;
+}
+
+h1, h2, h3 {
+    color: $blanco;
+    font-family: $titulos;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+h2 {
+    font-size: 3.5rem;
+}
+h3 {
+    font-size: 2rem
+}
+
+a {
+    color: $blanco;
+    text-decoration: none;
+    font-family: $titulos;
+    font-weight: bold;
+}
+
+p {
+    color: $negro;
+    font-size: 1.8rem;
+    font-family: $contenido;
+    line-height: 3rem;
+}
+
+
+section {
+    padding: 10rem 0;
+    
+}
+
