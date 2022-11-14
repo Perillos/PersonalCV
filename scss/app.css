@@ -452,6 +452,124 @@ h1.titulo__hello {
   color: #F2F2F2;
 }
 
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+@keyframes typing {
+  0.0000%, 27.3488% {
+    content: "a ";
+  }
+  1.1395%, 26.2093% {
+    content: "a D";
+  }
+  2.2791%, 25.0698% {
+    content: "a De";
+  }
+  3.4186%, 23.9302% {
+    content: "a Dev";
+  }
+  4.5581%, 22.7907% {
+    content: "a Deve";
+  }
+  5.6977%, 21.6512% {
+    content: "a Devel";
+  }
+  6.8372%, 20.5116% {
+    content: "a Develo";
+  }
+  7.9767%, 19.3721% {
+    content: "a Develop";
+  }
+  9.1163%, 18.2326% {
+    content: "a Develope";
+  }
+  10.2558%, 17.0930% {
+    content: "a Developer";
+  }
+  30.7674%, 62.2791% {
+    content: "a ";
+  }
+  31.9070%, 61.1395% {
+    content: "a F";
+  }
+  33.0465%, 60.0000% {
+    content: "a Fu";
+  }
+  34.1860%, 59.8605% {
+    content: "a Ful";
+  }
+  35.3256%, 58.7209% {
+    content: "a Full";
+  }
+  36.4651%, 57.5814% {
+    content: "a Full-";
+  }
+  37.6047%, 56.4419% {
+    content: "a Full-S";
+  }
+  38.6047%, 55.4419% {
+    content: "a Full-St";
+  }
+  39.6047%, 54.4419% {
+    content: "a Full-Sta";
+  }
+  40.6047%, 53.4419% {
+    content: "a Full-Stac";
+  }
+  41.6047%, 52.4419% {
+    content: "a Full-Stack";
+  }
+  63.6977%, 91.2093% {
+    content: "";
+  }
+  64.6372%, 90.0698% {
+    content: "F";
+  }
+  65.6767%, 89.9302% {
+    content: "Fe";
+  }
+  66.6163%, 88.7907% {
+    content: "Fer";
+  }
+  67.6558%, 87.6512% {
+    content: "Fern";
+  }
+  68.6558%, 86.6512% {
+    content: "Ferna";
+  }
+  69.6953%, 85.5116% {
+    content: "Fernan";
+  }
+  70.5349%, 84.3721% {
+    content: "Fernand";
+  }
+  71.5349%, 83.3721% {
+    content: "Fernand";
+  }
+  72.5349%, 82.3721% {
+    content: "Fernando";
+  }
+}
 #sobre-mi {
   display: flex;
 }
