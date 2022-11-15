@@ -1,11 +1,9 @@
 
-
-
-
 .habilidades {
     &__titulo {
         text-align: center;
     }
+
     &__lista {
         display: grid;
         gap: 4rem;
@@ -13,6 +11,7 @@
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         list-style: none;
     }
+
     &__logo {
         display: flex;
         flex-direction: column;
@@ -23,9 +22,5 @@
         &--container {
             align-items: center;
         }
-
-
-
     }
 } 
-

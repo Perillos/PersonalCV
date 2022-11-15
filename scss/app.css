@@ -527,17 +527,16 @@ section {
   }
 }
 /* RRSS */
-.contenido__hero {
+.contenido__rrss {
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
-  font-family: FontAwesome;
 }
-.contenido__hero a img {
+.contenido__rrss a img {
   height: 4rem;
   transition: 0.75s;
 }
-.contenido__hero a img:hover {
+.contenido__rrss a img:hover {
   transform: scale(1.5);
 }
 
@@ -637,58 +636,29 @@ section {
   background-image: url(/img/mac_programando.jpeg);
 }
 .contacto__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #9FD4CA;
   box-shadow: -3rem 0 0 0px #F8AF75, -4rem 0 0 0px #F2F2F2;
   background-image: url(/img/fondo-esquina-contacto.png);
   background-repeat: no-repeat;
   background-position: top right;
   background-color: #9FD4CA;
-  border-radius: 20px 0 0 20px;
+  border-radius: 2rem 0.5rem 0.5rem 2rem;
   padding: 2rem;
+  width: 50%;
+  min-width: 20rem;
 }
-.contacto__imagen--mail {
-  margin: auto 40%;
+.contacto__mail {
+  width: 7rem;
 }
-
-.campo, textarea {
-  padding: 2rem;
-  margin-bottom: 2rem;
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  color: #F2F2F2;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  border-bottom: #F2F2F2 solid 0.1rem;
+.contacto__linkedin img {
+  height: 5rem;
+  transition: 0.75s;
 }
-
-input[type=submit] {
-  background: #2C4355;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 1.1rem;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 20px;
-  min-width: 200px;
-  width: 200px;
-  height: 50px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1.2;
-  margin: 0 auto;
-  transition: all 400ms ease;
-}
-
-input[type=submit]:hover {
-  box-shadow: 0 0 3rem 0 #2C4355;
+.contacto__linkedin img:hover {
+  transform: scale(1.5);
 }
 
 /* Copy */
