@@ -3,25 +3,29 @@
 
 
 .habilidades {
-
     &__titulo {
         text-align: center;
     }
-    &__logos {
+    &__lista {
         display: grid;
         gap: 4rem;
         padding: 3rem;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        
-    
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        list-style: none;
     }
     &__logo {
-        border-radius: 1rem;
-        box-shadow: 0 0 3rem 0 $negro-trasparente;
-        text-align: center;
-        padding: 5rem;
-        animation-duration: 3s;
-        animation-name: slidein;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &--container {
+            align-items: center;
+        }
+
+
+
     }
 } 
 
