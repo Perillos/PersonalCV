@@ -1,11 +1,10 @@
 
 /* Hero */
 .hero {
-        margin-top: 10rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 0 2rem;
+        padding: 10rem 2rem 0rem 2rem;
         gap: 2rem; 
 }
 
@@ -36,13 +35,10 @@
 }
 
 /* Hero Title anime */
-.typewriter {
-    --caret: currentcolor;
-}
 
 .typewriter::after {
     content: "";
-    border-right: 1px solid var(--caret);
+    border-right: 1px solid $blanco;
     animation: blink 0.5s linear infinite;
 }
 
@@ -60,27 +56,27 @@
     0.0000% { content: ""; }
     1.0000% { content: "a"; }
     2.0000%, 27.3488% { content: "a "; }
-    3.0395%, 26.2093% { content: "a D"; }
-    4.2791%, 25.0698% { content: "a De"; }
-    5.4186%, 23.9302% { content: "a Dev"; }
-    6.5581%, 22.7907% { content: "a Deve"; }
-    7.6977%, 21.6512% { content: "a Devel"; }
-    8.8372%, 20.5116% { content: "a Develo"; }
-    9.9767%, 19.3721% { content: "a Develop"; }
-    10.1163%, 18.2326% { content: "a Develope"; }
-    11.2558%, 17.0930% { content: "a Developer"; }
+    3.0395%, 26.2093% { content: "a B"; }
+    4.2791%, 25.0698% { content: "a Ba"; }
+    5.4186%, 23.9302% { content: "a Bac"; }
+    6.5581%, 22.7907% { content: "a Back"; }
+    7.6977%, 21.6512% { content: "a Back-"; }
+    8.8372%, 20.5116% { content: "a Back-E"; }
+    9.9767%, 19.3721% { content: "a Back-En"; }
+    10.1163%, 18.2326% { content: "a Back-End"; }
+    11.2558%, 17.0930% { content: "a Back-End"; }
   
     30.7674%, 62.2791% { content: "a "; }
     31.9070%, 61.1395% { content: "a F"; }
-    33.0465%, 60.0000% { content: "a Fu"; }
-    34.1860%, 59.8605% { content: "a Ful"; }
-    35.3256%, 58.7209% { content: "a Full"; }
-    36.4651%, 57.5814% { content: "a Full-"; }
-    37.6047%, 56.4419% { content: "a Full-S"; }
-    38.6047%, 55.4419% { content: "a Full-St"; }
-    39.6047%, 54.4419% { content: "a Full-Sta"; }
-    40.6047%, 53.4419% { content: "a Full-Stac"; }
-    41.6047%, 52.4419% { content: "a Full-Stack"; }
+    33.0465%, 60.0000% { content: "a Fr"; }
+    34.1860%, 59.8605% { content: "a Fro"; }
+    35.3256%, 58.7209% { content: "a Fron"; }
+    36.4651%, 57.5814% { content: "a Front"; }
+    37.6047%, 56.4419% { content: "a Front-"; }
+    38.6047%, 55.4419% { content: "a Front-E"; }
+    39.6047%, 54.4419% { content: "a Front-En"; }
+    40.6047%, 53.4419% { content: "a Front-End"; }
+    41.6047%, 52.4419% { content: "a Front-End"; }
   
     63.6977%, 91.2093% { content: ""; }
     64.6372%, 90.0698% { content: "F"; }

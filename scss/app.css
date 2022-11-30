@@ -325,8 +325,12 @@ html {
 
 /* Especifico */
 body {
-  background-color: #F8AF75;
+  background-color: #343233;
   font: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #F8AF75;
 }
 
 footer {
@@ -365,17 +369,17 @@ p {
 }
 
 section {
-  padding: 10rem 0;
+  padding: 5rem 0;
+  background-color: #F8AF75;
 }
 
 /* Cuerpo */
 /* Hero */
 .hero {
-  margin-top: 10rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0 2rem;
+  padding: 10rem 2rem 0rem 2rem;
   gap: 2rem;
 }
 
@@ -402,13 +406,9 @@ section {
 }
 
 /* Hero Title anime */
-.typewriter {
-  --caret: currentcolor;
-}
-
 .typewriter::after {
   content: "";
-  border-right: 1px solid var(--caret);
+  border-right: 1px solid #F2F2F2;
   animation: blink 0.5s linear infinite;
 }
 
@@ -436,31 +436,31 @@ section {
     content: "a ";
   }
   3.0395%, 26.2093% {
-    content: "a D";
+    content: "a B";
   }
   4.2791%, 25.0698% {
-    content: "a De";
+    content: "a Ba";
   }
   5.4186%, 23.9302% {
-    content: "a Dev";
+    content: "a Bac";
   }
   6.5581%, 22.7907% {
-    content: "a Deve";
+    content: "a Back";
   }
   7.6977%, 21.6512% {
-    content: "a Devel";
+    content: "a Back-";
   }
   8.8372%, 20.5116% {
-    content: "a Develo";
+    content: "a Back-E";
   }
   9.9767%, 19.3721% {
-    content: "a Develop";
+    content: "a Back-En";
   }
   10.1163%, 18.2326% {
-    content: "a Develope";
+    content: "a Back-End";
   }
   11.2558%, 17.0930% {
-    content: "a Developer";
+    content: "a Back-End";
   }
   30.7674%, 62.2791% {
     content: "a ";
@@ -469,31 +469,31 @@ section {
     content: "a F";
   }
   33.0465%, 60.0000% {
-    content: "a Fu";
+    content: "a Fr";
   }
   34.1860%, 59.8605% {
-    content: "a Ful";
+    content: "a Fro";
   }
   35.3256%, 58.7209% {
-    content: "a Full";
+    content: "a Fron";
   }
   36.4651%, 57.5814% {
-    content: "a Full-";
+    content: "a Front";
   }
   37.6047%, 56.4419% {
-    content: "a Full-S";
+    content: "a Front-";
   }
   38.6047%, 55.4419% {
-    content: "a Full-St";
+    content: "a Front-E";
   }
   39.6047%, 54.4419% {
-    content: "a Full-Sta";
+    content: "a Front-En";
   }
   40.6047%, 53.4419% {
-    content: "a Full-Stac";
+    content: "a Front-End";
   }
   41.6047%, 52.4419% {
-    content: "a Full-Stack";
+    content: "a Front-End";
   }
   63.6977%, 91.2093% {
     content: "";
@@ -561,19 +561,20 @@ section {
   box-shadow: 0 0 3rem 0 rgba(44, 67, 85, 0.5019607843);
 }
 
-#sobre-mi {
-  display: flex;
-}
-
 .sobre-mi {
-  margin: 0;
-  padding: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-@media (min-width: 768px) {
-  .sobre-mi {
-    margin-left: 30%;
-    margin-right: 10%;
-  }
+.sobre-mi__img {
+  height: 30rem;
+  margin: auto auto;
+  vertical-align: middle;
+}
+.sobre-mi__content {
+  flex-basis: calc(60% - 1rem);
+  padding: 0 5rem;
+  margin: 0 auto;
 }
 .sobre-mi__titulo {
   text-align: center;
@@ -592,19 +593,39 @@ section {
 .habilidades__lista {
   display: grid;
   gap: 4rem;
-  padding: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  padding: 2rem 15rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   list-style: none;
 }
-.habilidades__logo {
+.habilidades__card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 10rem;
+  box-shadow: 0px 0px 10px -3px rgba(44, 67, 85, 0.5019607843);
+  border-radius: 2rem;
+  transition: 0.5s;
 }
-.habilidades__logo--container {
+.habilidades__card:hover {
+  height: 35rem;
+}
+.habilidades__logo {
+  margin-top: 1rem;
+}
+.habilidades__content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  margin: 0 2rem;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.habilidades__card:hover .habilidades__content {
+  opacity: 1;
+  transition-delay: 0.3s;
 }
 
 .porfolio__titulo {
