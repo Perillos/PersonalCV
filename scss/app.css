@@ -348,7 +348,6 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
-  text-align: center;
 }
 
 h3 {
@@ -566,6 +565,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: center;
 }
 .sobre-mi__img {
   height: 30rem;
@@ -591,6 +591,14 @@ section {
   align-items: center;
   text-align: center;
 }
+.formacion__contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+}
 .formacion__card {
   display: flex;
   flex-direction: column;
@@ -602,9 +610,13 @@ section {
   padding: 0 2rem 3rem 2rem;
 }
 .formacion__img {
-  width: 25rem;
+  height: 10rem;
+  margin: 1rem;
 }
 
+.habilidades {
+  text-align: center;
+}
 .habilidades__lista {
   display: grid;
   gap: 4rem;
@@ -615,16 +627,11 @@ section {
 .habilidades__card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 10rem;
+  height: 40rem;
   box-shadow: 0px 0px 10px -3px rgba(44, 67, 85, 0.5019607843);
   border-radius: 2rem;
-  transition: 0.5s;
-}
-.habilidades__card:hover {
-  height: 35rem;
 }
 .habilidades__logo {
   margin-top: 1rem;
@@ -632,15 +639,15 @@ section {
 .habilidades__content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin: 0 2rem;
-  opacity: 0;
+  opacity: 0.5;
   transition: 0.5s;
 }
 
 .habilidades__card:hover .habilidades__content {
   opacity: 1;
-  transition-delay: 0.3s;
 }
 
 .porfolio__titulo {
