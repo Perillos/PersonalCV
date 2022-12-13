@@ -15,6 +15,8 @@
     <title>Fernando - Full-Stack</title>
     <!-- Fabicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- script -->
+    <script src="js/app.js"></script>
   </head>
   <body>
     <header class="header">
@@ -233,9 +235,42 @@
       </section>
       <section id="contacto" class="contacto">
         <article class="contacto__article">
-          <img class="contacto__mail" src="img/email.png" alt="letter">
           <h2 class="contacto__titulo">Contacto</h2>
-          <a class="contacto__linkedin" href="https://www.linkedin.com/in/fernando-valero-1ab5a3a0/" target="_blank">
+          <img class="contacto__mail" src="img/email.png" alt="letter">
+
+
+
+
+          <form id="form">
+              <div>
+                <input id="name" class="campo" type="text" placeholder="Nombre">
+              </div>
+              <div>
+                <input id="email" class="campo" type="email" placeholder="E-Mail">
+              </div>
+              <div>
+                <textarea id="text" class="campo" placeholder="Escriba" id="" cols="30" rows="10"></textarea>
+              </div>
+              <div>
+                <input class="opacity-50" type="submit" value="Enviar">
+              </div>
+            </form>
+
+            <!-- Spinner -->
+            <div id="spinner" class="hidden spinner">
+              <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+              </div>
+            </div>
+
+
+
+          <a id="linkContac" class="hidden contacto__linkedin" href="https://www.linkedin.com/in/fernando-valero-1ab5a3a0/" target="_blank">
             <img src="/img/LinkedIn.png" alt="LinkedIn">
           </a>
         </article>
@@ -246,5 +281,4 @@
       <h3 class="copyright">&copy; Fernando Valero <span> el mejor del mundo entero</span></h3>
     </footer>
   </body>
-  <script src="js/scrip.js"></script>
 </html>
