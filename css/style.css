@@ -1,0 +1,160 @@
+:root {
+    /* Colores */
+    --blanco: #F2F2F2;
+    --negro: #2C4355;
+    --naranja: #F8AF75;
+    --verde: #9FD4CA;
+    --marron: #343233;
+
+    /* Fuentes */
+    --titulos: "Open Sans", Arial, Helvetica, sans-serif;
+    --contenido: "Montserrat", sans-serif;
+}
+
+/* Estandar */
+html {
+    box-sizing: border-box; /* Tamaño imagenes */
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit; /* Tamaño imagenes */
+}
+
+/* Globales */
+
+body {
+    background-color: var(--naranja);
+    margin: 0;
+    font: var(--titulos);
+}
+
+footer {
+    background-color: var(--marron);
+    margin: 0;
+}
+
+h1, h2, h3 {
+    color: var(--blanco);
+    font-family: var(--titulos);
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+h2 {
+    font-size: 3.5rem;
+}
+
+a {
+    font-size: 1.8rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: var(--titulos);
+    font-weight: bold;
+}
+
+
+/* Header */
+    /* Contenedor */
+
+.header {
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+    /* Barra */
+
+.barra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.logo {
+    width: 15rem;
+}
+
+.nav__principal {
+    display: flex;
+    gap: 2.5rem;
+    text-transform: uppercase;
+
+}
+
+    /* Contenido */
+
+.contenido__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+.contenido__header-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.titulo__hello {
+    margin: 0;
+    padding: 0;
+}
+h1.titulo__hello {
+    color: var(--negro);
+    background: linear-gradient(var(--naranja)60%,var(--verde)60%);
+    min-width: 45rem;
+}
+
+.header__img {
+    width: 40rem;
+}
+
+
+
+    /* RRSS */
+
+.contenido__header-rrss {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.contenido__header-link::after {
+    content: "\2197";
+    color: var(--blanco);
+}
+
+/* Sobre Mi */
+
+#sobre-mi {
+    display: flex;
+}
+
+.sobre-mi {
+
+    margin-left: 50%;
+}
+.sobre-mi__titulo {
+    text-align: center;
+}
+
+
+.sobre-mi__titulo--tachado {
+    text-decoration: line-through;
+}
+
+.sobre-mi__parrafo {
+    text-align: right;
+}
+
+
+/* Copy */
+
+.copyright {
+    color: var(--blanco);
+    width: 200px;
+}
