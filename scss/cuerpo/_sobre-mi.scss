@@ -1,36 +1,29 @@
 
-
-
-
+#sobre-mi {
+    display: flex;
+}
 
 .sobre-mi {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
+    margin: 0;
+    padding: 5rem;
 
-  
-  &__img {
-    height: 30rem;
-    margin: auto auto;
-    vertical-align: middle;
-  }
-
-  &__content {
-    flex-basis: calc(60% - 1rem);
-    padding: 0 5rem;
-    margin: 0 auto;
-  }
-
-  &__titulo {
-
-    &--tachado {
-        text-decoration: line-through;
+    @media (min-width: $tablet) {
+        margin-left: 50%;
+        margin-right: 10%; 
     }
-  }
-  
-  &__parrafo {
-      text-align: justify;
-      text-indent: 2rem;
-  }
+
+
+    &__titulo {
+        text-align: center;
+
+        &--tachado {
+            text-decoration: line-through;
+        }
+    }    
+    
+    &__parrafo {
+        text-align: justify;
+        text-indent: 2rem;
+    }
 }
+
