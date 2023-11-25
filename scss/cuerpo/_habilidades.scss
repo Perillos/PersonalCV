@@ -1,32 +1,29 @@
-
 .habilidades {
   text-align: center;
 
-
   &__lista {
-      display: grid;
-      gap: 4rem;
-      padding: 2rem 15rem;
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-      list-style: none;
+    display: grid;
+    gap: 4rem;
+    padding: 2rem 15rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    list-style: none;
   }
 
   &__card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: 40rem;
-      box-shadow: 0px 0px 10px -3px $negro-trasparente;
-      border-radius: 2rem;
- 
-    }
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40rem;
+    box-shadow: 0px 0px 10px -3px $negro-trasparente;
+    border-radius: 2rem;
+    background-color: $naranja-oscuro;
+  }
 
   &__logo {
     margin-top: 1rem;
   }
-    
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -36,9 +33,8 @@
     opacity: 0.5;
     transition: 0.5s;
   }
-} 
-
-.habilidades__card:hover .habilidades__content{
-  opacity: 1;
 }
 
+.habilidades__card:hover .habilidades__content {
+  opacity: 1;
+}

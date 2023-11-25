@@ -1,67 +1,73 @@
 .porfolio {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5rem;
+  }
 
-    &__titulo {
-        text-align: center;
+  &__titulo {
+    text-align: center;
+  }
+
+  &__img {
+    margin: 2rem;
+    img {
+      width: 25rem;
+      border-radius: 2rem;
     }
+  }
 
-    &__img {
-      margin: 2rem;
-      img {
-        width: 25rem;
-        border-radius: 2rem;
-      }
-    }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+    margin: 3rem;
+    box-shadow: 0px 0px 10px -3px $negro-trasparente;
+    border-radius: 0 2rem 2rem 0;
+    padding: 2rem;
+    background-color: $naranja-oscuro;
+  }
 
-    &__card {
+  &__btn {
+    display: flex;
+    gap: 5rem;
+    a {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 75%;
-      margin: 3rem;
-      box-shadow: 0px 0px 10px -3px $negro-trasparente;
-      border-radius: 0 2rem 2rem 0;
-      padding: 2rem;
+      justify-content: center;
+      width: 10rem;
+      box-shadow: 0 0 1rem 0 $negro-trasparente;
+      border-color: $marron;
+      border-radius: 2rem;
+      background-color: $blanco;
+      transition: 0.75s;
     }
+    a:hover {
+      box-shadow: 0 0 3rem 0 $negro-trasparente;
+    }
+    img {
+      width: 3rem;
+    }
+  }
+  &__logos {
+    display: grid;
+    gap: 4rem;
+    padding: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 2fr));
 
-    &__btn {
-      display: flex;
-      gap: 5rem;
-      a {
-        display: flex;
-        justify-content: center;
-        width: 10rem;
-        box-shadow: 0 0 1rem 0 $negro-trasparente;
-        border-color: $marron;
-        border-radius: 2rem;
-        background-color: $blanco;
-        transition: 0.75s;
-        
-      }
-      a:hover {
-        box-shadow: 0 0 3rem 0 $negro-trasparente;
-      }
-      img {
-        width: 3rem;
-      }
+    img {
+      margin: auto;
     }
-    &__logos {
-        display: grid;
-        gap: 4rem;
-        padding: 3rem;
-        grid-template-columns: repeat(auto-fit, minmax(50rem, 2fr));
-
-        img{
-            margin: auto;
-        }
-        
-    
-    }
-    &__logo {
-        border-radius: 1rem;
-        box-shadow: 0 0 3rem 0 $negro-trasparente;
-        text-align: center;
-        padding: 5rem;
-        animation-duration: 3s;
-        animation-name: slidein;
-    }
-} 
+  }
+  &__logo {
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem 0 $negro-trasparente;
+    text-align: center;
+    padding: 5rem;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+}

@@ -330,7 +330,7 @@ body {
 }
 
 header {
-  background-color: #F8AF75;
+  background-color: #f8af75;
 }
 
 footer {
@@ -338,7 +338,7 @@ footer {
 }
 
 h1, h2, h3 {
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
@@ -355,14 +355,14 @@ h3 {
 }
 
 a {
-  color: #F2F2F2;
+  color: #f2f2f2;
   text-decoration: none;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
 p {
-  color: #2C4355;
+  color: #2c4355;
   font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
   line-height: 3rem;
@@ -370,7 +370,7 @@ p {
 
 section {
   padding: 5rem 0;
-  background-color: #F8AF75;
+  background-color: #f8af75;
 }
 
 /* Cuerpo */
@@ -400,15 +400,15 @@ section {
   padding: 0;
 }
 .titulo--frist {
-  color: #2C4355;
+  color: #2c4355;
   display: inline;
-  background: linear-gradient(transparent 60%, #9FD4CA 60%);
+  background: linear-gradient(transparent 60%, #9fd4ca 60%);
 }
 
 /* Hero Title anime */
 .typewriter::after {
   content: "";
-  border-right: 1px solid #F2F2F2;
+  border-right: 1px solid #f2f2f2;
   animation: blink 0.5s linear infinite;
 }
 
@@ -632,6 +632,7 @@ section {
   height: 40rem;
   box-shadow: 0px 0px 10px -3px rgba(44, 67, 85, 0.5019607843);
   border-radius: 2rem;
+  background-color: #e9a56e;
 }
 .habilidades__logo {
   margin-top: 1rem;
@@ -650,6 +651,14 @@ section {
   opacity: 1;
 }
 
+.porfolio__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5rem;
+}
 .porfolio__titulo {
   text-align: center;
 }
@@ -664,11 +673,12 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75%;
+  width: 50rem;
   margin: 3rem;
   box-shadow: 0px 0px 10px -3px rgba(44, 67, 85, 0.5019607843);
   border-radius: 0 2rem 2rem 0;
   padding: 2rem;
+  background-color: #e9a56e;
 }
 .porfolio__btn {
   display: flex;
@@ -681,7 +691,7 @@ section {
   box-shadow: 0 0 1rem 0 rgba(44, 67, 85, 0.5019607843);
   border-color: #343233;
   border-radius: 2rem;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   transition: 0.75s;
 }
 .porfolio__btn a:hover {
@@ -719,11 +729,11 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #9FD4CA;
-  box-shadow: -3rem 0 0 0px #F8AF75, -4rem 0 0 0px #F2F2F2;
+  background-color: #9fd4ca;
+  box-shadow: -3rem 0 0 0px #f8af75, -4rem 0 0 0px #f2f2f2;
   background-repeat: no-repeat;
   background-position: top right;
-  background-color: #9FD4CA;
+  background-color: #9fd4ca;
   border-radius: 2rem 0.5rem 0.5rem 2rem;
   padding: 2rem;
   width: 50%;
@@ -747,15 +757,15 @@ section {
   background-color: transparent;
   border: none;
   font-size: 2rem;
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-family: "Montserrat", sans-serif;
   height: 12rem;
   width: 100%;
-  border-bottom: #F2F2F2 solid 0.1rem;
+  border-bottom: #f2f2f2 solid 0.1rem;
 }
 
 input[type=submit] {
-  background: #2C4355;
+  background: #2c4355;
   cursor: pointer;
   border: none;
   border-radius: 10px;
@@ -781,11 +791,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  box-shadow: 0 0 3rem 0 #2C4355;
+  box-shadow: 0 0 3rem 0 #2c4355;
 }
 
 .error {
-  background-color: #F8AF75;
+  background-color: #f8af75;
   color: #343233;
   text-align: center;
 }
@@ -824,7 +834,7 @@ input[type=submit]:hover {
   display: block;
   width: 25%;
   height: 25%;
-  background-color: #2C4355;
+  background-color: #2c4355;
   border-radius: 100%;
   animation: sk-chase-dot-before 2s infinite ease-in-out both;
 }
@@ -901,5 +911,5 @@ input[type=submit]:hover {
   padding: 5rem 5rem;
 }
 .copyright span {
-  color: #9FD4CA;
+  color: #9fd4ca;
 }/*# sourceMappingURL=app.css.map */
